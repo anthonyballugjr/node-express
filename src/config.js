@@ -1,3 +1,4 @@
+require('dotenv').config();
 const environment = process.env.NODE_ENVIRONMENT || 'development';
 
 const dbConfig = {
@@ -29,7 +30,9 @@ const dbConfig = {
 
 
 const config = {
-  dbConfig: dbConfig[environment]
+  dbConfig: dbConfig[environment],
+  url: 'Some Url',
+  key: 'Some key'
 }
 
 module.exports = config
