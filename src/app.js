@@ -11,5 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Add route
 app.use('/', require('./routes/home'));
+app.use('/users', require('./routes/user'));
 
 module.exports = app;
