@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,14 @@
   },
   "homepage": "https://github.com/earmix/node-express#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
